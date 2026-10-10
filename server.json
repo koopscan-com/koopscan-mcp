@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.koopscan/mcp",
+  "title": "Koopscan",
+  "description": "Dutch address data for AI assistants: BAG building facts, energy labels, reviewed crime signals.",
+  "version": "0.7.0",
+  "websiteUrl": "https://koopscan.com/en/mcp",
+  "repository": {
+    "url": "https://github.com/koopscan-com/koopscan-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.koopscan.com/mcp"
+    }
+  ]
+}

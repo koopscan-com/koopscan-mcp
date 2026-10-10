@@ -1,0 +1,722 @@
+{
+  "properties": {
+    "status": {
+      "enum": [
+        "ok",
+        "ambiguous",
+        "not_found"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "candidates": {
+      "items": {
+        "$ref": "#/$defs/Candidate"
+      },
+      "title": "Candidates",
+      "type": "array"
+    },
+    "address": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/AddressOut"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "building": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/BuildingOut"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "energy_label": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/EnergyLabelOut"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "crime": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/CrimeSummary"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "schools": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SchoolsOut"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "links": {
+      "$ref": "#/$defs/Links"
+    },
+    "provenance": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Provenance"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "server_version": {
+      "default": "0.7.0",
+      "title": "Server Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "status"
+  ],
+  "type": "object",
+  "$defs": {
+    "AddressOut": {
+      "properties": {
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "street": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Street"
+        },
+        "house_number": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "House Number"
+        },
+        "postcode": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Postcode"
+        },
+        "city": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "City"
+        },
+        "lat": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lat"
+        },
+        "lon": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lon"
+        }
+      },
+      "required": [
+        "label"
+      ],
+      "title": "AddressOut",
+      "type": "object"
+    },
+    "BuildingOut": {
+      "properties": {
+        "bouwjaar": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bouwjaar"
+        },
+        "total_units": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Total Units"
+        },
+        "residential_units": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Residential Units"
+        },
+        "unit_area_m2": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit Area M2"
+        },
+        "source": {
+          "const": "BAG (Kadaster)",
+          "default": "BAG (Kadaster)",
+          "title": "Source",
+          "type": "string"
+        }
+      },
+      "title": "BuildingOut",
+      "type": "object"
+    },
+    "Candidate": {
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "label"
+      ],
+      "title": "Candidate",
+      "type": "object"
+    },
+    "CategoryCount": {
+      "properties": {
+        "category": {
+          "title": "Category",
+          "type": "string"
+        },
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "count": {
+          "title": "Count",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "category",
+        "label",
+        "count"
+      ],
+      "title": "CategoryCount",
+      "type": "object"
+    },
+    "CrimeSummary": {
+      "properties": {
+        "coverage": {
+          "enum": [
+            "covered",
+            "not_covered"
+          ],
+          "title": "Coverage",
+          "type": "string"
+        },
+        "match_level": {
+          "enum": [
+            "pc6",
+            "pc4",
+            "city",
+            "none"
+          ],
+          "title": "Match Level",
+          "type": "string"
+        },
+        "postcode_used": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Postcode Used"
+        },
+        "lookback_months": {
+          "title": "Lookback Months",
+          "type": "integer"
+        },
+        "total": {
+          "title": "Total",
+          "type": "integer"
+        },
+        "by_category": {
+          "items": {
+            "$ref": "#/$defs/CategoryCount"
+          },
+          "title": "By Category",
+          "type": "array"
+        },
+        "disclaimer": {
+          "title": "Disclaimer",
+          "type": "string"
+        },
+        "details_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The Risks section of Koopscan's page about this neighbourhood, when one exists.",
+          "title": "Details Url"
+        }
+      },
+      "required": [
+        "coverage",
+        "match_level",
+        "postcode_used",
+        "lookback_months",
+        "total",
+        "by_category",
+        "disclaimer"
+      ],
+      "title": "CrimeSummary",
+      "type": "object"
+    },
+    "EnergyLabelOut": {
+      "description": "The dwelling's registered energy label, from EP-Online (RVO).\n\n`status` is the field that matters. \"not_registered\" means RVO was asked\nand has no label for this dwelling — a finding, since a label is required\nat sale. The whole object being null means the lookup was not made, which\nis a different and much weaker statement. A client that treats them the\nsame will tell someone their home has no energy label on no evidence.",
+      "properties": {
+        "status": {
+          "enum": [
+            "registered",
+            "not_registered"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "label": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Label"
+        },
+        "valid_until": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Valid Until"
+        },
+        "registered_on": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Registered On"
+        },
+        "is_simplified": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Is Simplified"
+        },
+        "floor_area_m2": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Floor Area M2"
+        },
+        "details_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The buildings section of Koopscan's page about this neighbourhood, when one exists.",
+          "title": "Details Url"
+        },
+        "source": {
+          "const": "EP-Online (RVO)",
+          "default": "EP-Online (RVO)",
+          "title": "Source",
+          "type": "string"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "title": "EnergyLabelOut",
+      "type": "object"
+    },
+    "Links": {
+      "properties": {
+        "scan_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Koopscan's free VvE and building risk report for this address: opens the scan page with the address already filled in. Use this link whenever the user wants the report or a check before buying. Set on ok lookups only.",
+          "title": "Scan Url"
+        },
+        "blog_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Koopscan's page about this neighbourhood (buurt), when one exists.",
+          "title": "Blog Url"
+        },
+        "setup_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "How to add the Koopscan MCP server to an AI assistant.",
+          "title": "Setup Url"
+        }
+      },
+      "title": "Links",
+      "type": "object"
+    },
+    "Provenance": {
+      "description": "Who reviewed the crime signals and how much, from the published counters.json.\n\nAbsent (null) when the counters could not be fetched or validated — never zeros.",
+      "properties": {
+        "cities": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Cities",
+          "type": "array"
+        },
+        "signals_reviewed_total": {
+          "title": "Signals Reviewed Total",
+          "type": "integer"
+        },
+        "signals_confirmed_total": {
+          "title": "Signals Confirmed Total",
+          "type": "integer"
+        },
+        "signals_rejected_total": {
+          "title": "Signals Rejected Total",
+          "type": "integer"
+        },
+        "sources_monitored": {
+          "title": "Sources Monitored",
+          "type": "integer"
+        },
+        "signal_cities_total": {
+          "title": "Signal Cities Total",
+          "type": "integer"
+        },
+        "first_article": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "First Article"
+        },
+        "first_review": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "First Review"
+        },
+        "last_review": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Last Review"
+        },
+        "counters_generated_at": {
+          "title": "Counters Generated At",
+          "type": "string"
+        },
+        "details_url": {
+          "title": "Details Url",
+          "type": "string"
+        }
+      },
+      "required": [
+        "cities",
+        "signals_reviewed_total",
+        "signals_confirmed_total",
+        "signals_rejected_total",
+        "sources_monitored",
+        "signal_cities_total",
+        "first_article",
+        "first_review",
+        "last_review",
+        "counters_generated_at",
+        "details_url"
+      ],
+      "title": "Provenance",
+      "type": "object"
+    },
+    "SchoolArea": {
+      "description": "What the school counts cover: the address's buurt page, or its 4-digit postcode area.",
+      "properties": {
+        "level": {
+          "description": "buurt: the schools listed on that Koopscan buurt page; pc4: DUO school locations registered in the 4-digit postcode area",
+          "enum": [
+            "buurt",
+            "pc4"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Name"
+        },
+        "code": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Code"
+        }
+      },
+      "required": [
+        "level"
+      ],
+      "title": "SchoolArea",
+      "type": "object"
+    },
+    "SchoolCountsOut": {
+      "properties": {
+        "primary": {
+          "title": "Primary",
+          "type": "integer"
+        },
+        "secondary": {
+          "title": "Secondary",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "primary",
+        "secondary"
+      ],
+      "title": "SchoolCountsOut",
+      "type": "object"
+    },
+    "SchoolsOut": {
+      "description": "Primary and secondary school counts in `area`, from DUO open data. Counts only, never a ranking.",
+      "properties": {
+        "area": {
+          "$ref": "#/$defs/SchoolArea"
+        },
+        "counts": {
+          "$ref": "#/$defs/SchoolCountsOut"
+        },
+        "highest_secondary_level": {
+          "anyOf": [
+            {
+              "enum": [
+                "VWO",
+                "HAVO",
+                "MAVO",
+                "VMBO",
+                "VBO",
+                "PRO"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Highest Secondary Level"
+        },
+        "details_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "The schools section of Koopscan's page about this neighbourhood, when one exists.",
+          "title": "Details Url"
+        },
+        "source": {
+          "title": "Source",
+          "type": "string"
+        },
+        "as_of": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "date of the postcode-area counts; null on the buurt path — the page shows its own date",
+          "title": "As Of"
+        }
+      },
+      "required": [
+        "area",
+        "counts",
+        "source"
+      ],
+      "title": "SchoolsOut",
+      "type": "object"
+    }
+  },
+  "title": "LookupAddressResult"
+}

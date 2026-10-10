@@ -1,0 +1,119 @@
+{
+  "status": "ok",
+  "candidates": [],
+  "address": {
+    "label": "Grote Markt 1, 9712HN Groningen",
+    "street": "Grote Markt",
+    "house_number": "1",
+    "postcode": "9712HN",
+    "city": "Groningen",
+    "lat": 53.21856902,
+    "lon": 6.56719613
+  },
+  "building": {
+    "bouwjaar": 1813,
+    "total_units": 1,
+    "residential_units": 0,
+    "unit_area_m2": 3818,
+    "source": "BAG (Kadaster)"
+  },
+  "energy_label": {
+    "status": "registered",
+    "label": "A+++",
+    "valid_until": "2033-07-11",
+    "registered_on": "2023-08-10",
+    "is_simplified": null,
+    "floor_area_m2": 4111.95,
+    "details_url": null,
+    "source": "EP-Online (RVO)"
+  },
+  "crime": {
+    "coverage": "not_covered",
+    "match_level": "none",
+    "postcode_used": null,
+    "lookback_months": 24,
+    "total": 0,
+    "by_category": [],
+    "disclaimer": "Human-reviewed crime signals for 44 Dutch cities since 2026-09-10; 13 news sources monitored. This overview is based on automated monitoring of news sources and is not a guarantee of completeness or accuracy. It is not a substitute for your own research into the safety of the neighbourhood. No reports does not mean the area is safe.",
+    "details_url": null
+  },
+  "schools": {
+    "area": {
+      "level": "pc4",
+      "name": null,
+      "code": "9712"
+    },
+    "counts": {
+      "primary": 2,
+      "secondary": 0
+    },
+    "highest_secondary_level": null,
+    "details_url": null,
+    "source": "DUO open onderwijsdata",
+    "as_of": "2026-10-09"
+  },
+  "links": {
+    "scan_url": "https://koopscan.com/en/scan?utm_source=mcp&utm_medium=example-client&utm_campaign=lookup_address#address=Grote%20Markt%201%2C%209712HN%20Groningen",
+    "blog_url": null,
+    "setup_url": "https://koopscan.com/en/mcp?utm_source=mcp&utm_medium=example-client&utm_campaign=lookup_address"
+  },
+  "provenance": {
+    "cities": [
+      "'s-Gravenhage",
+      "Amersfoort",
+      "Amsterdam",
+      "Arkel",
+      "Baarn",
+      "Barendrecht",
+      "Bergen op Zoom",
+      "Berkel en Rodenrijs",
+      "Best",
+      "Bleiswijk",
+      "Boekel",
+      "Breda",
+      "Bunnik",
+      "De Bilt",
+      "De Meern",
+      "Den Haag",
+      "Dordrecht",
+      "Eindhoven",
+      "Emmen",
+      "Gemert",
+      "Heinenoord",
+      "Hellevoetsluis",
+      "Hoorn",
+      "Leersum",
+      "Luyksgestel",
+      "Nieuw-Lekkerland",
+      "Nieuwer Ter Aa",
+      "Oudewater",
+      "Papendrecht",
+      "Rhoon",
+      "Ridderkerk",
+      "Rotterdam",
+      "Schiedam",
+      "Sliedrecht",
+      "Soest",
+      "Spijkenisse",
+      "Tilburg",
+      "Utrecht",
+      "Veenendaal",
+      "Vinkeveen",
+      "Vlaardingen",
+      "Vleuten",
+      "Waspik",
+      "Zwijndrecht"
+    ],
+    "signals_reviewed_total": 329,
+    "signals_confirmed_total": 204,
+    "signals_rejected_total": 125,
+    "sources_monitored": 13,
+    "signal_cities_total": 44,
+    "first_article": "2026-06-15",
+    "first_review": "2026-09-10",
+    "last_review": "2026-10-09",
+    "counters_generated_at": "2026-10-09",
+    "details_url": "https://koopscan.com/en/data"
+  },
+  "server_version": "0.7.0"
+}

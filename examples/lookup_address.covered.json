@@ -1,0 +1,175 @@
+{
+  "status": "ok",
+  "candidates": [],
+  "address": {
+    "label": "Kratonkade 400, 3024EW Rotterdam",
+    "street": "Kratonkade",
+    "house_number": "400",
+    "postcode": "3024EW",
+    "city": "Rotterdam",
+    "lat": 51.9022024,
+    "lon": 4.45855003
+  },
+  "building": {
+    "bouwjaar": 2023,
+    "total_units": 25,
+    "residential_units": 24,
+    "unit_area_m2": 133,
+    "source": "BAG (Kadaster)"
+  },
+  "energy_label": {
+    "status": "registered",
+    "label": "A++",
+    "valid_until": "2033-10-13",
+    "registered_on": "2023-12-08",
+    "is_simplified": null,
+    "floor_area_m2": 136.33,
+    "details_url": "https://koopscan.com/en/blog/schiemond-rotterdam?utm_source=mcp&utm_medium=example-client&utm_campaign=lookup_address#buildings",
+    "source": "EP-Online (RVO)"
+  },
+  "crime": {
+    "coverage": "covered",
+    "match_level": "city",
+    "postcode_used": null,
+    "lookback_months": 24,
+    "total": 52,
+    "by_category": [
+      {
+        "category": "drugs",
+        "label": "Drugs",
+        "count": 10
+      },
+      {
+        "category": "geweld",
+        "label": "Violence",
+        "count": 9
+      },
+      {
+        "category": "steekpartij",
+        "label": "Stabbing",
+        "count": 7
+      },
+      {
+        "category": "diefstal",
+        "label": "Theft",
+        "count": 6
+      },
+      {
+        "category": "explosie",
+        "label": "Explosion",
+        "count": 6
+      },
+      {
+        "category": "schietpartij",
+        "label": "Shooting",
+        "count": 5
+      },
+      {
+        "category": "overval",
+        "label": "Robbery",
+        "count": 3
+      },
+      {
+        "category": "vandalisme",
+        "label": "Vandalism",
+        "count": 2
+      },
+      {
+        "category": "beroving",
+        "label": "beroving",
+        "count": 2
+      },
+      {
+        "category": "inbraak",
+        "label": "Burglary",
+        "count": 1
+      },
+      {
+        "category": "vuur",
+        "label": "vuur",
+        "count": 1
+      }
+    ],
+    "disclaimer": "Note: there are no reports for this address or postcode area; the counts cover the whole city. Human-reviewed crime signals for 44 Dutch cities since 2026-09-10; 13 news sources monitored. This overview is based on automated monitoring of news sources and is not a guarantee of completeness or accuracy. It is not a substitute for your own research into the safety of the neighbourhood. No reports does not mean the area is safe.",
+    "details_url": "https://koopscan.com/en/blog/schiemond-rotterdam?utm_source=mcp&utm_medium=example-client&utm_campaign=lookup_address#risks"
+  },
+  "schools": {
+    "area": {
+      "level": "buurt",
+      "name": "Schiemond",
+      "code": null
+    },
+    "counts": {
+      "primary": 6,
+      "secondary": 4
+    },
+    "highest_secondary_level": "VWO",
+    "details_url": "https://koopscan.com/en/blog/schiemond-rotterdam?utm_source=mcp&utm_medium=example-client&utm_campaign=lookup_address#schools",
+    "source": "DUO open onderwijsdata",
+    "as_of": null
+  },
+  "links": {
+    "scan_url": "https://koopscan.com/en/scan?utm_source=mcp&utm_medium=example-client&utm_campaign=lookup_address#address=Kratonkade%20400%2C%203024EW%20Rotterdam",
+    "blog_url": "https://koopscan.com/en/blog/schiemond-rotterdam?utm_source=mcp&utm_medium=example-client&utm_campaign=lookup_address",
+    "setup_url": "https://koopscan.com/en/mcp?utm_source=mcp&utm_medium=example-client&utm_campaign=lookup_address"
+  },
+  "provenance": {
+    "cities": [
+      "'s-Gravenhage",
+      "Amersfoort",
+      "Amsterdam",
+      "Arkel",
+      "Baarn",
+      "Barendrecht",
+      "Bergen op Zoom",
+      "Berkel en Rodenrijs",
+      "Best",
+      "Bleiswijk",
+      "Boekel",
+      "Breda",
+      "Bunnik",
+      "De Bilt",
+      "De Meern",
+      "Den Haag",
+      "Dordrecht",
+      "Eindhoven",
+      "Emmen",
+      "Gemert",
+      "Heinenoord",
+      "Hellevoetsluis",
+      "Hoorn",
+      "Leersum",
+      "Luyksgestel",
+      "Nieuw-Lekkerland",
+      "Nieuwer Ter Aa",
+      "Oudewater",
+      "Papendrecht",
+      "Rhoon",
+      "Ridderkerk",
+      "Rotterdam",
+      "Schiedam",
+      "Sliedrecht",
+      "Soest",
+      "Spijkenisse",
+      "Tilburg",
+      "Utrecht",
+      "Veenendaal",
+      "Vinkeveen",
+      "Vlaardingen",
+      "Vleuten",
+      "Waspik",
+      "Zwijndrecht"
+    ],
+    "signals_reviewed_total": 329,
+    "signals_confirmed_total": 204,
+    "signals_rejected_total": 125,
+    "sources_monitored": 13,
+    "signal_cities_total": 44,
+    "first_article": "2026-06-15",
+    "first_review": "2026-09-10",
+    "last_review": "2026-10-09",
+    "counters_generated_at": "2026-10-09",
+    "details_url": "https://koopscan.com/en/data"
+  },
+  "server_version": "0.7.0"
+}

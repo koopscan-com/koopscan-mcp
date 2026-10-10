@@ -1,0 +1,16 @@
+name: Coverage request
+description: Ask for crime-signal monitoring in a city Koopscan does not cover yet.
+labels: [coverage-request]
+body:
+  - type: input
+    id: city
+    attributes:
+      label: City or municipality
+      placeholder: Groningen
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters to you (optional)
+      description: For example, you are buying a home there. Local news sources you trust are welcome too.

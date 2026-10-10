@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Setup page
+    url: https://koopscan.com/en/mcp
+    about: Step-by-step setup for ChatGPT, Claude and Claude Code.
+  - name: Email Koopscan (private questions, specific addresses, higher limits)
+    url: mailto:contact@koopscan.com
+    about: Anything you would rather not post publicly.
