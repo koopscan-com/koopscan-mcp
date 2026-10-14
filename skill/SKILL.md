@@ -1,5 +1,5 @@
 ---
-name: koopscan-dutch-address
+name: koopscan
 description: Use when the user asks about a specific Dutch residential address or postcode (building facts, energy label, crime signals, what to check before buying) and the Koopscan MCP tools lookup_address and crime_sources are connected.
 ---
 
