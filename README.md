@@ -18,10 +18,10 @@ https://mcp.koopscan.com/mcp
 
 ### ChatGPT
 
-1. In ChatGPT, click Add and choose "Custom MCP server".
-2. Name: koopscan.
-3. Connection: paste the URL below.
-4. Choose "No Auth" and save.
+1. In ChatGPT, open the Plugins menu.
+2. In the top right corner, click Add and choose "Add custom MCP server".
+3. Name: koopscan. Connection: paste the URL below.
+4. For authentication, choose "No Auth" and save.
 5. Start a new chat, add koopscan and ask about a Dutch address.
 
 ```
@@ -32,11 +32,11 @@ Config file: [`configs/chatgpt-connector.txt`](configs/chatgpt-connector.txt)
 
 ### Claude (claude.ai, Claude Desktop)
 
-1. Open Settings → Connectors.
-2. Choose "Add custom connector".
-3. Name it Koopscan and paste the URL below.
-4. Leave authentication empty and save.
-5. Enable Koopscan in a chat's tools menu and ask about a Dutch address.
+1. In Claude, open Settings → Connectors.
+2. Click "Add custom connector".
+3. Name: Koopscan. Server URL: paste the URL below.
+4. Leave "Advanced settings" (OAuth) empty and click Add.
+5. In a new chat, enable Koopscan from the + menu and ask about a Dutch address.
 
 ```
 https://mcp.koopscan.com/mcp
@@ -140,10 +140,10 @@ No. The hosted server is proprietary. This repository holds the client configs, 
 
 ### ChatGPT koppelen
 
-1. Klik in ChatGPT op Add en kies "Custom MCP server".
-2. Vul bij Name koopscan in.
-3. Plak bij Connection de URL hieronder.
-4. Kies "No Auth" en sla op.
+1. Open in ChatGPT het menu Plugins.
+2. Klik rechtsboven op Add en kies "Add custom MCP server".
+3. Vul bij Name koopscan in en plak bij Connection de URL hieronder.
+4. Kies bij authenticatie "No Auth" en sla op.
 5. Start een nieuwe chat, voeg koopscan toe en vraag naar een Nederlands adres.
 
 ```
@@ -152,11 +152,11 @@ https://mcp.koopscan.com/mcp
 
 ### Claude koppelen (claude.ai, Claude Desktop)
 
-1. Open Settings → Connectors.
-2. Kies "Add custom connector".
-3. Noem hem Koopscan en plak de URL hieronder.
-4. Laat authenticatie leeg en sla op.
-5. Zet Koopscan aan in het tools-menu van een chat en vraag naar een Nederlands adres.
+1. Open in Claude Settings → Connectors.
+2. Klik op "Add custom connector".
+3. Vul bij Name Koopscan in en plak bij de server-URL de URL hieronder.
+4. Laat "Advanced settings" (OAuth) leeg en klik op Add.
+5. Zet Koopscan aan via het +-menu in een nieuwe chat en vraag naar een Nederlands adres.
 
 ```
 https://mcp.koopscan.com/mcp
